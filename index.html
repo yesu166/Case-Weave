@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101b2a">
+<meta name="description" content="CaseWeave ActionScope — cross-bureau case coordination through explainable relationship signals, officer review and accountable follow-up.">
+<title>CaseWeave ActionScope | SIH26264</title>
+<style>
+:root{--ink:#142033;--muted:#637084;--line:#dce3e9;--paper:#f7f8fa;--blue:#1d5d78;--teal:#c9e4e2;--gold:#f0c86b;--white:#fff;--green:#246b52}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:-.04em}.mark{display:grid;place-items:center;width:36px;height:36px;background:var(--ink);color:white;font-size:14px;font-weight:800;border-radius:4px}.brand small{display:block;font-size:10px;letter-spacing:.16em;color:var(--muted);font-weight:700}.navlinks{display:flex;align-items:center;gap:24px;font-size:13px;color:var(--muted)}.navlinks a{text-decoration:none}.navlinks .navbtn{padding:10px 14px;border:1px solid var(--ink);color:var(--ink);font-weight:700}.hero{padding:82px 0 64px;display:grid;grid-template-columns:1.15fr .85fr;gap:58px;align-items:center}.eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:800;color:var(--blue)}.eyebrow:before{content:"";height:2px;width:25px;background:var(--gold)}h1{font-size:clamp(42px,6vw,72px);letter-spacing:-.065em;line-height:1.02;margin:23px 0 22px;max-width:660px}h1 span{color:var(--blue)}.lead{max-width:560px;font-size:17px;color:#536174}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;text-decoration:none;font-weight:750;font-size:13px;border:1px solid var(--ink);background:var(--ink);color:white}.btn.secondary{background:transparent;color:var(--ink)}.micro{font-size:11px;color:var(--muted);margin-top:19px}.panel{background:#fff;border:1px solid #cfd9df;box-shadow:12px 12px 0 #e4e9ed;padding:24px}.paneltop{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:16px;font-size:12px;font-weight:800}.status{font-size:10px;padding:5px 8px;background:#e8f4ec;color:var(--green);letter-spacing:.08em}.signal{margin-top:18px;padding:14px;border:1px solid var(--line);display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start}.sigicon{width:34px;height:34px;display:grid;place-items:center;background:#e5eff4;color:var(--blue);font-size:17px}.signal b{display:block;font-size:13px}.signal p{font-size:11px;color:var(--muted);margin:3px 0 0}.bar{height:4px;background:#edf0f3;margin-top:14px}.bar span{display:block;width:66%;height:100%;background:var(--gold)}.caption{font-size:10px;color:var(--muted);margin-top:12px}.strip{background:var(--ink);color:#fff;padding:19px 0}.stripin{display:flex;align-items:center;justify-content:space-between;gap:18px}.strip strong{font-size:13px}.strip span{color:#c4ced7;font-size:12px}.section{padding:75px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}.kicker{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--blue);font-weight:800}h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.05em;line-height:1.12;margin:10px 0 0}.sectionhead p{max-width:400px;color:var(--muted);font-size:13px;margin:0}.features{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.feature{padding:24px;min-height:170px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.num{font-size:11px;font-weight:800;color:var(--blue);letter-spacing:.1em}.feature h3{font-size:16px;margin:17px 0 8px;letter-spacing:-.02em}.feature p{font-size:12px;color:var(--muted);margin:0}.workflow{background:#edf1f4;border:1px solid var(--line);padding:24px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:stretch}.step{background:#fff;border:1px solid #cfd9df;padding:16px 13px;position:relative}.step:not(:last-child):after{content:"›";position:absolute;right:-10px;top:35%;font-size:23px;font-weight:800;color:var(--blue);z-index:1}.step small{font-size:10px;color:var(--blue);font-weight:800}.step b{display:block;font-size:13px;line-height:1.3;margin-top:10px}.step p{font-size:10px;color:var(--muted);margin-bottom:0}.outcomes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}.outcome{padding:18px;background:#fff;border:1px solid var(--line)}.outcome b{font-size:12px}.outcome p{font-size:11px;color:var(--muted);margin:4px 0 0}.outcome.green{border-top:3px solid #5d9b72}.outcome.gray{border-top:3px solid #87919b}.outcome.red{border-top:3px solid #b85e5e}.proof{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:start}.proofnote{background:#fff;border:1px solid var(--line);padding:22px}.proofnote strong{font-size:14px}.proofnote p{font-size:12px;color:var(--muted)}.references{margin:0;padding-left:20px;font-size:12px;color:var(--muted)}.references li{padding:7px 0}.references a{color:var(--blue);text-underline-offset:3px}.footer{background:#101b2a;color:white;padding:30px 0}.footin{display:flex;justify-content:space-between;gap:20px;align-items:center}.footin p{font-size:11px;color:#c2ccd6;margin:4px 0}.footlinks{display:flex;gap:18px;font-size:12px}.footlinks a{color:#fff;text-decoration:none}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:35px;padding-top:56px}.panel{max-width:550px}.features{grid-template-columns:repeat(2,1fr)}.sectionhead,.proof{grid-template-columns:1fr;display:grid}.workflow{grid-template-columns:1fr}.step:not(:last-child):after{content:"↓";right:16px;top:auto;bottom:-19px}.outcomes{grid-template-columns:1fr}.stripin{align-items:flex-start;flex-direction:column}.navlinks{gap:12px}.navlinks a:not(.navbtn){display:none}}
+@media(max-width:480px){.wrap{width:min(100% - 28px,1120px)}.features{grid-template-columns:1fr}.hero{padding:48px 0}.panel{padding:16px}.footin{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#" style="text-decoration:none"><span class="mark">CW</span><span>CASEWEAVE<small>ACTIONSCOPE · SIH26264</small></span></a>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#workflow">Workflow</a><a href="#references">References</a><a class="navbtn" href="#demo">Explore concept ↗</a></nav>
+</header>
+<main>
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow">Cross-Bureau Case Coordination</div>
+    <h1>See the links.<br><span>Keep decisions</span><br>accountable.</h1>
+    <p class="lead">CaseWeave ActionScope is a proposed coordination layer that helps authorised officers review potential relationships between institution-related cases, understand the signals, and coordinate follow-up without replacing official case systems.</p>
+    <div class="actions"><a class="btn" href="#workflow">Explore the workflow <span>↗</span></a><a class="btn secondary" href="#approach">How it works</a></div>
+    <p class="micro">SIH26264 · Concept prototype · Designed for authorised institutional use</p>
+  </div>
+  <aside class="panel" id="demo" aria-label="Illustrative relationship alert">
+    <div class="paneltop"><span>RELATIONSHIP REVIEW</span><span class="status">ILLUSTRATIVE</span></div>
+    <div class="signal"><div class="sigicon">⌘</div><div><b>Shared institution / unit</b><p>A possible common entity appears across submitted case records.</p></div></div>
+    <div class="signal"><div class="sigicon">↔</div><div><b>Scope, status & dates</b><p>Compare selected attributes to surface a potential relationship for review.</p></div></div>
+    <div class="signal"><div class="sigicon">◷</div><div><b>Source freshness</b><p>Flag stale or unavailable source information instead of assuming no relationship.</p><div class="bar"><span></span></div></div></div>
+    <div class="caption">Illustrative UI only. Signals are not findings or proof of a relationship.</div>
+  </aside>
+</section>
+<div class="strip"><div class="wrap stripin"><strong>Human-led. Explainable. Auditable.</strong><span>Assist coordination, never automate a final case decision.</span></div></div>
+<section class="wrap section" id="approach">
+  <div class="sectionhead"><div><div class="kicker">The approach</div><h2>From scattered records<br>to accountable follow-up.</h2></div><p>One focused workflow for surfacing possible connections while preserving officer judgement, source context, and the authority of existing systems.</p></div>
+  <div class="features">
+    <article class="feature"><div class="num">01 / CONNECT</div><h3>Authorised case inputs</h3><p>Bring permitted case attributes into a consistent review view through approved adapters or prototype data.</p></article>
+    <article class="feature"><div class="num">02 / COMPARE</div><h3>Potential relationship signals</h3><p>Compare institution, unit, action scope, type, status and dates to identify records worth examining.</p></article>
+    <article class="feature"><div class="num">03 / EXPLAIN</div><h3>Visible matching reasons</h3><p>Show which attributes triggered a possible relationship instead of presenting a black-box conclusion.</p></article>
+    <article class="feature"><div class="num">04 / VERIFY</div><h3>Source freshness checks</h3><p>Surface stale or unknown source status so missing data is not mistaken for a clean result.</p></article>
+    <article class="feature"><div class="num">05 / REVIEW</div><h3>Officer remains in control</h3><p>Authorised officers accept or reject a signal and record a reason for the decision.</p></article>
+    <article class="feature"><div class="num">06 / COORDINATE</div><h3>Track follow-up</h3><p>Create a coordination task and retain an audit trail while official case records remain authoritative.</p></article>
+  </div>
+</section>
+<section class="section" style="background:#fff" id="workflow">
+  <div class="wrap">
+    <div class="sectionhead"><div><div class="kicker">Proposed workflow</div><h2>A signal is a prompt,<br>not a verdict.</h2></div><p>Every candidate relationship flows through human review. Uncertain or stale data is explicitly identified.</p></div>
+    <div class="workflow">
+      <div class="step"><small>STEP 01</small><b>Authorised inputs</b><p>Approved records or synthetic demo data</p></div>
+      <div class="step"><small>STEP 02</small><b>Match & explain</b><p>Compare attributes and show reasons</p></div>
+      <div class="step"><small>STEP 03</small><b>Check freshness</b><p>Mark unknown or outdated sources</p></div>
+      <div class="step"><small>STEP 04</small><b>Officer review</b><p>Accept or reject with a reason</p></div>
+      <div class="step"><small>STEP 05</small><b>Coordinate & audit</b><p>Track follow-up and decision history</p></div>
+    </div>
+    <div class="outcomes">
+      <div class="outcome green"><b>Potential relationship</b><p>Route to authorised officer review and documented coordination.</p></div>
+      <div class="outcome gray"><b>Not related</b><p>Keep official case records separate and retain the review outcome.</p></div>
+      <div class="outcome red"><b>Stale / unknown</b><p>Flag uncertainty for verification. Never imply “no relationship” from missing data.</p></div>
+    </div>
+  </div>
+</section>
+<section class="wrap section" id="references">
+  <div class="proof">
+    <div><div class="kicker">Grounded in existing practice</div><h2>Built to complement,<br>not replace.</h2><p class="lead" style="font-size:14px">India already has criminal-justice data integration initiatives. ActionScope’s proposed focus is the explainable review-to-coordination workflow.</p></div>
+    <div class="proofnote"><strong>Research & reference points</strong><ol class="references">
+      <li><a href="https://www.mha.gov.in/" target="_blank" rel="noreferrer">Ministry of Home Affairs</a> · Government context</li>
+      <li><a href="https://ecommitteesci.gov.in/icjs/" target="_blank" rel="noreferrer">Inter-operable Criminal Justice System (ICJS)</a> · Existing integration initiative</li>
+      <li><a href="https://www.ncrb.gov.in/" target="_blank" rel="noreferrer">National Crime Records Bureau</a> · Criminal justice information systems</li>
+      <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html" target="_blank" rel="noreferrer">OWASP Logging Cheat Sheet</a> · Security logging guidance</li>
+    </ol><p style="font-size:10px;margin-bottom:0">This site describes a concept. Live agency integrations require formal authorisation and security review.</p></div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap footin"><div><div style="font-weight:800;letter-spacing:-.03em">CASEWEAVE ACTIONSCOPE</div><p>Cross-Bureau Case Coordination · SIH26264</p></div><div class="footlinks"><a href="#approach">Approach</a><a href="#workflow">Workflow</a><a href="#references">References</a></div></div></footer>
+</body>
+</html>
